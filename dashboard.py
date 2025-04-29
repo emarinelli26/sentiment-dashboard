@@ -3,6 +3,18 @@ import pandas as pd
 import os
 import plotly.express as px
 
+# Título principal
+st.title("📊 Análisis de Sentimiento en Redes Sociales")
+
+# Subtítulo o descripción
+st.markdown("""
+Bienvenido al dashboard de análisis de sentimiento.  
+Aquí podés explorar comentarios extraídos automáticamente de redes sociales como Reddit y YouTube, 
+analizados mediante técnicas de procesamiento de lenguaje natural para clasificar su polaridad emocional.
+
+---
+""")
+
 # Funciones auxiliares
 def list_csv_files(folder='data'):
     return [f for f in os.listdir(folder) if f.endswith('.csv')]
